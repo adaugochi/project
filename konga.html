@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>static page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--google material design-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--bootstrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="konga.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href=""/>
     <script src=""></script>
     <style>
         body{
@@ -30,18 +34,14 @@
         li {
             float: left;
         }
-
         .header {
             display: block;
             padding-left: 5px;
             padding-right: 5px;
-            text-decoration: none;
-        }
-        a:first-child {
-            color: black;
         }
         .header a:hover {
-            color: orange
+            color: orange;
+            text-decoration: none;
         }
         .container {
             padding: 20px;
@@ -75,7 +75,7 @@
             border-radius: 4px;
             position: absolute;
             margin-top: 30px;
-            margin-left: 159px; 
+            margin-left: 152px; 
             box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
         }
         #search_button{
@@ -85,7 +85,7 @@
             border-bottom-right-radius: 4px;
             position: absolute;
             margin-top: 30px;
-            margin-left: 639px; 
+            margin-left: 632px; 
             padding-left: 25px;
             padding-right: 25px;
             background-color: white;
@@ -97,30 +97,93 @@
             float: right;
             padding-top: 40px;
         }
-        i{
+        i {
             font-size: 26px;
         }
-        #icon:hover{
+        #icon:hover {
             color: orange;
         }
-        .navbar2{
+        .navbar2 {
             background-color: deeppink;
             padding: 15px;
             padding-left: 45px;    
         }
-        .items{
+        .items {
             display: block;
             padding-left: 30px;
             padding-right: 30px;
             text-decoration: none;
         }
-        #items{
+        .items a:hover {
+            text-decoration: none;
+        }
+        #items {
             color: white;
         }
-        .section{
+        .section {
             padding-left: 5vw;
             padding-right: 5vw;
             background-color: whitesmoke;
+            padding-bottom: 5vw;
+        }
+        .footer {
+            width: 100%;
+            background-color: dimgray;
+            padding-bottom: 120px;
+            padding-top: 20px;
+        }
+        .col {
+            float: left;
+            padding-right: 150px;
+            margin-left: 100px;
+        }
+        .col h5 {
+            font-size:15px; 
+            font-weight:bold; 
+            color:white
+        }
+        div a {
+            font-size: 12px;
+            color: darkgray;
+            text-decoration: none;
+        }
+        div a:first-child {
+            color: darkgray;
+        }
+        div a:hover {
+            color: darkgray;
+        }
+        .col2 h5 {
+            font-size:15px; 
+            font-weight:bold; 
+            color:white
+        }
+        div p{
+            font-size: 12px;
+            color: darkgray;
+        }
+        .email {
+            padding: 10px 10px 10px 0px;
+        }
+        .subscribe {
+            padding: 10px;
+            background-color:sandybrown;
+            border-color: sandybrown;
+        }
+        .read {
+            background-color: deeppink;
+            padding: 10px;
+            size: 20px;
+            border-radius: 25px;
+            border: 0px;
+            color: white;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        .read:hover {
+            background-color: palevioletred; 
+        }
+        i {
+            padding: 10px;
         }
     </style>
 </head>
@@ -130,8 +193,8 @@
             <nav class="navbar1">
                 <div class="container">
                     <ul>
-                        <li class="header"><a href="#">Bulk purchase |</a></li>
-                        <li class="header"><a href="#">Konga stall locator |</a></li>
+                        <li class="header"><a href="#">Bulk purchase </a>|</li>
+                        <li class="header"><a href="#">Konga stall locator </a>|</li>
                         <li class="header"><a href="#">0700700000</a></li>    
                         <li class="header" style="float:right;">
                             <a href="#">
@@ -140,11 +203,11 @@
                                 </button>
                             </a>
                         </li>
-                        <li class="header" style="float:right;"><a href="#">Sign Up |</a></li>
-                        <li class="header" style="float:right;"><a href="#">Sell on Konga |</a></li>
-                        <li class="header" style="float:right;"><a href="#">Return policy |</a></li>
-                        <li class="header" style="float:right;"><a href="#">FAQ |</a></li>
-                        <li class="header" style="float:right;"><a href="#">Contact us |</a></li>
+                        <li class="header" style="float:right;"><a href="#">Sign Up </a></li>
+                        <li class="header" style="float:right;"><a href="#">Sell on Konga </a>|</li>
+                        <li class="header" style="float:right;"><a href="#">Return policy </a>|</li>
+                        <li class="header" style="float:right;"><a href="#">FAQ </a>|</li>
+                        <li class="header" style="float:right;"><a href="#">Contact us </a>|</li>
                     </ul>      
                 </div>
             </nav>
@@ -174,15 +237,100 @@
     </section>
 
     <section class="section">
-        <div style="float:left">
-            <img src="image2.jpg" style="width:60%">
-        </div>
-        <div style="vertical-align:right">
-            <img src="image4.jpg" style="width:30%; float:right">
-            <img src="image1.jpg" style="width:30%; float:right">
+        <div style="margin-top:20px">
+            <img src="image2.jpg" style="width:20%">
+            <img src="image4.jpg" style="width:20%; float:right">
+            <img src="image1.jpg" style="width:20%; float:right">
             <img src="image3.jpg" style="width:20%; float:right">
+            <img src="image4.jpg" style="width:20%; float:right">
+        </div>
+
+        <div style="margin-top: 30px">
+            <h3 style="text-align:center">Our Services</h3>
+            <p>     
+                <h4>Online Shopping at Konga – Shop Smart, Live Well</h4>
+                Konga.com is Nigeria’s number one online shopping destination. We pride ourselves on 
+                having everything you could possibly need for life and living at the best prices than 
+                anywhere else. Our access to Original Equipment Manufacturers and premium sellers gives
+                us a wide range of products at very low prices. Some of our popular categories include
+                electronics, mobile phones, computers, fashion, beauty products, home and kitchen, 
+                Building and construction materials and a whole lot more from premium brands. 
+                Some of our other categories include Food and drinks, automotive and industrial, books, 
+                usical equipment, babies and kids items, sports and fitness, to mention a few. 
+                To make your shopping experience swift and memorable, there are also added services 
+                like gift vouchers, consumer promotion activities across different categories and bulk 
+                purchases with hassle-free delivery. Enjoy free shipping rates for certain products and 
+                with the bulk purchase option, you can enjoy low shipping rates, discounted prices and 
+                flexible payment. When you shop on our platform, you can pay with your debit card or via 
+                KongaPay, which is a convenient and secure payment solution. We also have the Pay on 
+                Collect and also Pay on Delivery option.
+            </p> 
+            <button class="read">Read More >></button>
         </div>
     </section>
+
     
+        <div class="footer">
+            <div class="col">
+                <h5>Buying on Konga</h5>
+                <div>
+                    <a href="">Buyer Safety Center |</a>
+                    <a href="">Konga Buyer Protection |</a>
+                    <a href="">How to Chop on Konga |</a>
+                    <a href="">konga Return policy |</a>
+                    <a href="">Delivery</a>
+                </div>
+                <h5>Konga</h5>
+                <div>
+                    <a href="">Contact Us |</a>
+                    <a href="">About Us |</a>
+                    <a href="">Forum |</a>
+                    <a href="">career</a>
+                    <a href="">Become a Yuboss agent |</a>
+                    <a href="">FAQ |</a>
+                    <a href="">Site Map |</a>
+                    <a href="">Our Blog |</a>
+                    <a href="">e-Gift voucher </a><br>
+                    <a href="">Bulk purchase |</a>
+                    <a href="">Track your order |</a>
+                    <a href="">Seller Academy |</a>
+                    <a href="">Delivery</a>
+                </div>
+                <h5>Payment</h5>
+                <div>
+                    <a href="">KongaPay |</a>
+                    <a href="">Wallet</a>
+                </div>
+                <div>
+                    <br><br><br>
+                    <label style="color: darkgray;">Polices:</label>
+                    <a href="">Terms of use |</a>
+                    <a href="">Privacy |</a>
+                    <a href="">Authenticate terms</a>
+                    <p>Copyright © 2018 Konga.com. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col2">
+                <h5>Shop Easter</h5>
+                <div>
+                    <p>Download Konga Mobile <br> App Today</p>
+                </div>
+                <h5>Newsletter</h5>
+                <div>
+                    <p>Subscribe for Special Offers, Promos & Deals</p><br>
+                    <input type="email" class="email" placeholder="Enter email address">
+                    <button class="subscribe">Subscribe</button>
+                    <br><br>
+                    <p style="color:white;">Keep in Touch <br> 0700 700 0000 | 0708 063 5700 | 0809 4605555</p>
+                    <p style="color: white;">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
 </body>
 </html>
